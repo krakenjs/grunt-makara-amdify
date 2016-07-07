@@ -7,6 +7,6 @@
   "license": "Apache 2.0",
   "repository": "https://github.com/krakenjs/grunt-makara-amdify.git",
   "dependencies": {
-    "makara-amdify": "^1.0.0"
+    "makara-amdify": "git://github.com/krakenjs/makara-amdify#refactor.makara-builder2"
   }
 }
