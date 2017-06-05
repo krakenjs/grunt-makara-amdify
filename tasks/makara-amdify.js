@@ -5,6 +5,10 @@ var path = require('path');
 
 module.exports = function (grunt) {
     grunt.registerTask('makara-amdify', 'Write out AMD i18n bundles', function () {
-        ma.build(this.options().appRoot || process.cwd(), this.async());
+        ma.build({
+            appRoot: this.options().appRoot || process.cwd(),
+            writer: this.async(),
+            cb: function() {}
+        });
     });
 };
